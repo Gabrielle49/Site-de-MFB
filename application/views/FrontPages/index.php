@@ -50,18 +50,17 @@
                         </div>
                     </div>                  
                     <div class="col-md-8 col-sm-8" id="accueil">    
-                       
+                        <i class=" material-icons md-18" >
+                                history
+                            <h3 class="title"> Historique</h3>
+                        </i>
                         
                         <div id="story">
-                          <h5 class="title"> Historique</h5>
-                          <i class=" material-icons md-18" >
-                                  history
-                          </i>
-                            <!--Mission-->
+                            Mission
                         </div>
                         <i class="material-icons md-18" >
                                 assignment
-                            <h2 class="title"> Missions</h2>
+                            <h3 class="title"> Missions</h3>
                         </i>                
                         <div id="story">
                             Mission

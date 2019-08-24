@@ -22,133 +22,53 @@
                             </tr>
                           </thead>
                           <tbody>
-                            <tr class="table-active">
-                              <th>
-                                Cras justo odio
-                                   <div class="liste">
-                                        <button type="button" class="btn btn-outline-warning d-none d-md-inline">Aperçu</button>
-                                        <button type="button" class="btn btn-outline-warning btn-sm d-sm-block d-md-none">
-                                          <i class="material-icons">
-                                            visibility
-                                          </i>
-                                        </button>
-                                        <button type="button" class="btn btn-outline-primary d-none d-md-inline">Telecharger</button>
-                                        <button type="button" class="btn btn-outline-primary btn-sm d-sm-block d-md-none">
+                            <?php for($i=0;$i<count($listedocument);$i++){?>
+                              <tr class="table-active">
+                                <th>
+                                 <?php echo $listedocument[$i]['nomfichier'];?>
+                                     <div class="liste">
+                                          <button type="button" class="btn btn-outline-warning d-none d-md-inline">Aperçu</button>
+                                          <button type="button" class="btn btn-outline-warning btn-sm d-sm-block d-md-none">
                                             <i class="material-icons">
-                                              get_app
+                                              visibility
                                             </i>
-                                        </button>
-                                        
-                                   </div>
-                              </th>
-                            </tr>
-                            <tr class="table-active">
-                              <th>
-                                Cras justo odio
-                                   <div class="liste">
-                                        <button type="button" class="btn btn-outline-warning d-none d-md-inline">Aperçu</button>
-                                        <button type="button" class="btn btn-outline-warning btn-sm d-sm-block d-md-none">
-                                          <i class="material-icons">
-                                            visibility
-                                          </i>
-                                        </button>
-                                        <button type="button" class="btn btn-outline-primary d-none d-md-inline">Telecharger</button>
-                                        <button type="button" class="btn btn-outline-primary btn-sm d-sm-block d-md-none">
-                                            <i class="material-icons">
-                                              get_app
-                                            </i>
-                                        </button>
-                                        
-                                   </div>
-                              </th>
-                            </tr>
-                            <tr class="table-active">
-                              <th>
-                                Cras justo odio
-                                   <div class="liste">
-                                        <button type="button" class="btn btn-outline-warning d-none d-md-inline">Aperçu</button>
-                                        <button type="button" class="btn btn-outline-warning btn-sm d-sm-block d-md-none">
-                                          <i class="material-icons">
-                                            visibility
-                                          </i>
-                                        </button>
-                                        <button type="button" class="btn btn-outline-primary d-none d-md-inline">Telecharger</button>
-                                        <button type="button" class="btn btn-outline-primary btn-sm d-sm-block d-md-none">
-                                            <i class="material-icons">
-                                              get_app
-                                            </i>
-                                        </button>
-                                        
-                                   </div>
-                              </th>
-                            </tr>
-                            <tr class="table-active">
-                              <th>
-                                Cras justo odio
-                                   <div class="liste">
-                                        <button type="button" class="btn btn-outline-warning d-none d-md-inline">Aperçu</button>
-                                        <button type="button" class="btn btn-outline-warning btn-sm d-sm-block d-md-none">
-                                          <i class="material-icons">
-                                            visibility
-                                          </i>
-                                        </button>
-                                        <button type="button" class="btn btn-outline-primary d-none d-md-inline">Telecharger</button>
-                                        <button type="button" class="btn btn-outline-primary btn-sm d-sm-block d-md-none">
-                                            <i class="material-icons">
-                                              get_app
-                                            </i>
-                                        </button>
-                                        
-                                   </div>
-                              </th>
-                            </tr>
-                            <tr class="table-active">
-                              <th>
-                                Cras justo odio
-                                   <div class="liste">
-                                        <button type="button" class="btn btn-outline-warning d-none d-md-inline">Aperçu</button>
-                                        <button type="button" class="btn btn-outline-warning btn-sm d-sm-block d-md-none">
-                                          <i class="material-icons">
-                                            visibility
-                                          </i>
-                                        </button>
-                                        <button type="button" class="btn btn-outline-primary d-none d-md-inline">Telecharger</button>
-                                        <button type="button" class="btn btn-outline-primary btn-sm d-sm-block d-md-none">
-                                            <i class="material-icons">
-                                              get_app
-                                            </i>
-                                        </button>
-                                        
-                                   </div>
-                              </th>
-                            </tr>
+                                          </button>
+                                          <button type="button" class="btn btn-outline-success d-none d-md-inline">Telecharger</button>
+                                          <button type="button" class="btn btn-outline-success btn-sm d-sm-block d-md-none">
+                                              <i class="material-icons">
+                                                get_app
+                                              </i>
+                                          </button>    
+                                     </div>
+                                </th>
+                              </tr>
+                            <?php }?>
                           </tbody>
                        </table> 
                          <div id="pagination">
                             <ul class="pagination ">
-                              <li class="page-item disabled">
-                                <a class="page-link" href="#">&laquo;</a>
-                              </li>
-                              <li class="page-item active">
-                                <a class="page-link" href="#">1</a>
-                              </li>
-                              <li class="page-item">
-                                <a class="page-link" href="#">2</a>
-                              </li>
-                              <li class="page-item">
-                                <a class="page-link" href="#">3</a>
-                              </li>
-                              <li class="page-item">
-                                <a class="page-link" href="#">4</a>
-                              </li>
-                              <li class="page-item">
-                                <a class="page-link" href="#">5</a>
-                              </li>
-                              <li class="page-item">
-                                <a class="page-link" href="#">&raquo;</a>
-                              </li>
+                              <?php
+                              $j = 1; 
+                              $i = 0;
+                              while($i<($nombredocument[0]['count'])){
+                                if($i==0)
+                                {?>
+                                  <li class="page-item ">
+                                    <a class="page-link" href="<?=site_url('Rubrique1Controller/getListeDocument/'.$listedocument[0]['type'].'/0/5');?>"><?php echo ($j); ?></a>
+                                  </li>
+                                <?php }
+                                else{?>
+                                  <li class="page-item ">
+                                    <a class="page-link" href="<?=site_url('Rubrique1Controller/getListeDocument/'.$listedocument[0]['type'].'/'.($i).'/5');?>"><?php echo ($j); ?></a>
+                                  </li>
+                                <?php }
+                              $i +=5;
+                              $j++;?>
+                              <?php } ?> 
                             </ul>
+                            
                         </div>
+                         
 				    </div>
           </div>
 			  </div>

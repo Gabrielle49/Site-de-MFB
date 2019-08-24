@@ -28,7 +28,8 @@ bottom: 0;
 .title{
 	text-align: center;
 	font-family: Arial Bold;
-	color: rgba(44,62,80,1);
+	color:#123D27;
+    font-weight:bold;
 }
 .liste{
    float:right;
@@ -44,11 +45,12 @@ bottom: 0;
 
 }
 .material-icons.md-18 { 
-    font-size: 50px;
+    font-size: 100px;
     margin-top:  50px;
     margin-left: -155px;
     margin-right: 50px;
     float:left;
+    color:black;
 }
 #owner{
     width:50px;
@@ -59,33 +61,33 @@ bottom: 0;
     margin-left:0px;
 }
 #titreDoc{
-    background-image: url('../images/documents.jpg');
+    background-image: url('../images/Psmfp.jpg');
     height: 250px;
     text-align: center;
 }
 .titre{
     text-align: center;
     font-family: Arial Black;
-    color: rgba(44,62,80,1);
+    color:black;
     margin-top: 100px;
 }
 #canvas{
     margin-top: 35px;
 }
 .image{
-    margin-left: 30px;
+    margin-left: 10px;
     margin-right: 150px;
     margin-top: 30px;
 }
 .question{
     margin-top: 100px;
-    color: #3c7460;
-    margin-left: 10px;
+    color: #13B955;
+    margin-left: 0px;
     font-family: Arial Black;
     
 }
 #bouton{
-    margin-left:80px;
+    margin-left:60px;
     margin-top: 40px;
 }
 .footer{
@@ -117,7 +119,7 @@ bottom: 0;
 .titleBack{
 	margin-top:20px;
 	margin-bottom:20px;
-    color:#593196;
+    color:#2F0C65;
 }
 .os1, .os2, .os8, .os9
 { display: inline-block; background: url('../images/index.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
@@ -126,6 +128,45 @@ bottom: 0;
 .os2 { background-position: -0px -198px; width: 200px; height: 200px; }
 .os8 { background-position: -0px -398px; width: 200px; height: 200px; }
 .os9 { background-position: -0px -598px; width: 193px; height: 222px; }
+
+.dropdown .dropdown-menu a:hover
+{
+   /* background-color:#123d27 !important;*/
+   background-color: #214E37 !important
+}
+
+#wawa{
+    background-image: url('../images/background.jpg');
+ }
+#donutchart{
+    margin-top: 50px;
+    margin-left: 230px;
+}
+.btn-primary {
+
+    color: #fff;
+    background-color: #2F0C65;
+    border-color: #2F0C65;
+
+}
+.page-link{ 
+    color:#13B955;
+}
+.page-link:hover{
+    background-color: #13B955;
+    color:#fff;
+}
+
+#titrePsmfp{
+    height: 400px;
+    background-position:center;
+    background: transparent url('../images/image1.jpg') ;
+
+}
+#validation{
+    margin-top: 30px;
+}
+
 
 @media screen and (max-width: 1280px)
 
@@ -185,8 +226,4 @@ bottom: 0;
     }
 
 
-}
-.dropdown .dropdown-menu a:hover
-{
-    background-color:#3c7460 !important;
 }

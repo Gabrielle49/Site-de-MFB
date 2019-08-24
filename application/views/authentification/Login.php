@@ -12,8 +12,7 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     </head>
-    <body>
-		<form>
+    <body>	
 		<div class="container" id="background">
 		  <div class="row">
 				<div class="col-md-12 col-sm-12 col-lg-12">
@@ -22,25 +21,24 @@
 		  </div>
 		  <div class="row">
 			<div class="col-md-12 col-sm-12 col-lg-12">
-				  <div class="form-group" >
-					<label for="exampleInputEmail1">Email address</label>
-					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-					<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-				  </div>
-				  <div class="form-group">
-					<label for="exampleInputPassword1">Password</label>
-					<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-				  </div>
-				  <div class="form-group form-check">
-					<input type="checkbox" class="form-check-input" id="exampleCheck1">
-					<label class="form-check-label" for="exampleCheck1">Check me out</label>
-				  </div>
-				  <!--<button type="submit" class="btn btn-primary">Submit</button>-->
-				  <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+			  <?php echo form_open('GestionUtilisateurController/verifyUtilisateur');?>
+						<div class="form-group" >
+						<label for="exampleInputEmail1">Username</label>
+						<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username" name="username">
+						</div>
+						<div class="form-group">
+						<label for="exampleInputPassword1">Password</label>
+						<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">
+						</div>
+						<div class="form-group form-check">
+						<input type="checkbox" class="form-check-input" id="exampleCheck1">
+						<label class="form-check-label" for="exampleCheck1">Check me out</label>
+						</div>
+						<button type="submit" class="btn btn-primary btn-lg btn-block">Block level button</button>
+				<?php form_close();?>
 				  <a href="<?=site_url("GestionUtilisateurController/MakeInscription")?>">Inscrivez-vous</a>
 			</div>
 		  </div>
 		</div>
-		</form>
 	</body>
 </html>

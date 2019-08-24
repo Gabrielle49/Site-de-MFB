@@ -13,103 +13,118 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     </head>
-    <body>
+    <body id="wawa">
         <script type="text/javascript">
             $(function () {
               $('[data-toggle="tooltip"]').tooltip()
             })
         </script>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarColor01">
-                <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.php">Accueil <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Rubrique1.php">Rubrique1</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Rubrique2.php">Rubrique2</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Rubrique3.php">Rubrique3</a>
-                </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-                </form>
-            </div>
-        </nav>
-        <div class="container-fluid">
+        <div class="container-fluid" style="margin-top: 50px;">
             <div class="row">
                 <div class="col-md-2">
-                   <nav class="navbar navbar bg-light">
-                     <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Insert et Modification</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Liste et Suppression</a>
-                        </li>
-                     </ul>
-                   </nav>
-               </div>
-               <div class="col-md-10">
-                <h2 class="titleBack"><i class="material-icons">list</i>Liste</h2>
-                 <table class="table" style="width:100%">
-                          <thead>
-                            <tr>
-                              <th scope="col">#</th>
-                              <th scope="col">First</th>
-                              <th scope="col">Last</th>
-                              <th scope="col">Handle</th>
-                              <th width="80" scope="col">Action</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <th scope="row">1</th>
-                              <td>Mark</td>
-                              <td>Otto</td>
-                              <td>@mdo</td>
-                              <td><a href="BackCrud.php"><i class="material-icons" data-toggle="tooltip" data-placement="top" title="Modifier">edit</i></a><a href="#" data-toggle="modal" data-target="#exampleModal"><i class="material-icons" data-toggle="tooltip" data-placement="top" title="Supprimer">delete</i></a></td>
-                            </tr>
-                            <tr>
-                              <th scope="row">2</th>
-                              <td>Jacob</td>
-                              <td>Thornton</td>
-                              <td>@fat</td>
-                              <td><a href="BackCrud.php"><i class="material-icons" data-toggle="tooltip" data-placement="top" title="Modifier">edit</i></a><a href="#"><i class="material-icons" data-toggle="tooltip" data-placement="top" title="Supprimer">delete</i></a></td>
-                            </tr>              
-                          </tbody>
-                 </table>
-               </div>
-            </div>
-            <div class="row">
-                <div class="col-md-10" id="pagination">
-                    <nav aria-label="Page navigation example">
-                          <ul class="pagination">
-                            <li class="page-item">
-                              <a class="page-link" href="#" aria-label="Previous">
-                                <span aria-hidden="true">&laquo;</span>
-                              </a>
-                            </li>
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item">
-                              <a class="page-link" href="#" aria-label="Next">
-                                <span aria-hidden="true">&raquo;</span>
-                              </a>
-                            </li>
-                          </ul>
-                    </nav>
+                    <div class="accordion" id="myAccordion" >
+                        <div class="card">
+                            <div class="card-header" id="headingOne"  style="background-color:RGBa(255,255,255,0.5);opacity:0,33;">
+                                <h2 class="mb-0">
+                                    <img src="<?php echo base_url ('assets/images/owner.jpg')?>" style="display:inline;"/>
+                                    <p style="text-align: center;">Utilisateur 1</p>
+                                </h2>
+                            </div>
+                            
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"><img src="<?php echo base_url('assets/images/dashboard.png');?>"></button>
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"><img src="<?php echo base_url('assets/images/liste.png');?>"></button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#myAccordion">
+                                <div class="card-body">
+                                    <p><a href="<?=site_url("BackController/getListe");?>">Liste 1</a></p>
+                                    <p><a href="#">Liste 2</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                    <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"><img src="<?php echo base_url('assets/images/insertion.png');?>"></button>
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#myAccordion">
+                               <div class="card-body">
+                                    <p><a href="<?=site_url("BackController/getInsertInterface");?>">Insertion 1</a></p>
+                                    <p><a>Insertion 2</a></p>
+                                    <p><a>Insertion 3</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-10" style="background-color:RGBa(255,255,255,0.5);" >
+                    <!--<div id="donutchart" style="width: 900px; height: 500px;"></div>-->
+                    <div class="input-group " style="margin-top: 10px;">
+                      <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="Recherche">
+                      <div class="input-group-append">
+                        <button class="btn btn-primary" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+                      </div>
+                    </div>
+                        <div class="row">
+                              <table class="table" style="width:100%">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">First</th>
+                                    <th scope="col">Last</th>
+                                    <th scope="col">Handle</th>
+                                    <th width="80" scope="col">Action</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                    <td><a href="BackCrud.php"><i class="material-icons" data-toggle="tooltip" data-placement="top" title="Modifier">edit</i></a><a href="#" data-toggle="modal" data-target="#exampleModal"><i class="material-icons" data-toggle="tooltip" data-placement="top" title="Supprimer">delete</i></a></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                    <td><a href="BackCrud.php"><i class="material-icons" data-toggle="tooltip" data-placement="top" title="Modifier">edit</i></a><a href="#"><i class="material-icons" data-toggle="tooltip" data-placement="top" title="Supprimer">delete</i></a></td>
+                                  </tr>              
+                                </tbody>
+                              </table>
+                            <div class="col-md-10" id="pagination">
+                                <nav aria-label="Page navigation example">
+                                      <ul class="pagination">
+                                        <li class="page-item">
+                                          <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                          </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                          <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                          </a>
+                                        </li>
+                                      </ul>
+                                </nav>
+                            </div>
+                        </div>
+                   
                 </div>
             </div>
         </div>

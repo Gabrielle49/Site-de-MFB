@@ -1,7 +1,7 @@
-        <div class="my-container container-fluid">
+        <div class="my-container container">
             <div class="row">
                 <div class ="col-md-4 col-sm-12 col-lg-4">
-                    <h3 class="question">Avez vous des questions ?</h3>
+                    <h2 class="question">Avez-vous des questions ?</h2>
                     <img src="<?php echo base_url('assets/images/question.png');?>" class="image"/> 
                     <button type="button" class="btn btn-success" id="bouton" data-toggle="button" aria-pressed="false" autocomplete="off">
                         #VOIR LES QUESTIONS
@@ -18,11 +18,8 @@
                             <label for="exampleInputPassword1">Password</label>
                             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                           </div>
-                          <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                          </div>
-                          <button type="submit" class="btn btn-success">Valider</button>
+                         
+                          <button type="submit" class="btn btn-success btn-lg btn-block" id="validation">Valider</button>
                     </form>                
                 </div>
             </div>

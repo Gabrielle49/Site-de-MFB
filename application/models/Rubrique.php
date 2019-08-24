@@ -27,8 +27,9 @@ class Rubrique extends CI_Model{
     }
 
     public function getAllRubrique(){
-		$query = $this->db->query("SELECT * FROM Rubrique");
+       	$query = $this->db->query("SELECT * FROM Rubrique");
         return ($query->result_array());
+       
     }
 
     public function getSousRubriqueParRubrique($idRubrique){

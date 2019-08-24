@@ -13,6 +13,5 @@ class HomeController extends MY_Controller {
 		$data["view"] = $this->load->view('FrontPages/index.php', $data, TRUE);
 		$this->load->view('Composant/Header.php',$data);
 	}
-	
-	
+
 }

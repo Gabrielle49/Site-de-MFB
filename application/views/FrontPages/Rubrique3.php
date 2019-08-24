@@ -18,16 +18,16 @@
                     </div>
                     <div class="row">
                         <div class="col-md-3 col-sm-12">
-                          DEVELOPPER LES CAPACITES HUMAINES, INSTITUTIONNELLES ET TECHNIQUES DE LA FONCTION FINANCIERE 
+                          <strong><a href="<?=site_url('Rubrique1Controller/getDetail');?>">DEVELOPPER LES CAPACITES HUMAINES, INSTITUTIONNELLES ET TECHNIQUES DE LA FONCTION FINANCIERE</a></strong>
                         </div>
                         <div class="col-md-3 col-sm-12">
-                          ASSURER UNE MEILLEURE INTEGRATION DES ENTITES AUTONOMES ET DES CTD A L’ACTION PUBLIQUE
+                          <strong>ASSURER UNE MEILLEURE INTEGRATION DES ENTITES AUTONOMES ET DES CTD A L’ACTION PUBLIQUE</strong>
                         </div>
                         <div class="col-md-3 col-sm-12">
-                          RENFORCER LES CONTROLES A POSTERIORI ET LA CONTRIBUTION DE LA GFP A LA LUTTE CONTRE LA CORRUPTION
+                          <strong>RENFORCER LES CONTROLES A POSTERIORI ET LA CONTRIBUTION DE LA GFP A LA LUTTE CONTRE LA CORRUPTION</strong>
                         </div>
                         <div class="col-md-3 col-sm-12">
-                          PILOTER EFFICACEMENT LA REFORME 
+                          <strong>PILOTER EFFICACEMENT LA REFORME </strong>
                         </div>
                     </div>
                 </div>
